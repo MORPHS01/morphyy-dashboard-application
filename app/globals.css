@@ -3,25 +3,76 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --myCyan: hsl(184, 97%, 43%);
+  --lightCyan: rgb(76, 243, 255);
+  --darkCyan: rgb(0, 160, 172);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@font-face {
+  font-family: 'MyFont';
+  src: url('/app/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf');
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'MyFont', sans-serif, arial, helvetica;
+}
+
+@media  screen and (max-width:800px) {
+  .sidebar{
+    z-index: 10000000;
   }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .heroPattern{
+    background-image: url('../data/welcome-bg.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .niceTransition{
+    transition: all 0.4s ease;
+  }
+
+  .sidebar {
+    box-shadow: rgb(113 122 131 / 11%) 0px 7px 30px 0px;
+  }
+  .nav-item,
+  .navbar {
+    z-index: 10000;
+  }
+
+  .e-dlg-center-center, .e-quick-popup-wrapper.e-device{
+    z-index: 1000000 !important;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(186, 184, 184);
+    border-radius: 40px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
   }
 }
+
+#preview {
+  background: transparent
+    url('https://ej2.syncfusion.com/react/demos/src/color-picker/images/pen.png')
+    no-repeat;
+  display: inline-block;
+  height: 80px;
+  margin: 10px 0;
+  min-width: 300px;
+  max-width: 600px;
+  background-color: #008000;
+}
+
+/* .e-input-group:not(.e-float-icon-left), .e-input-group.e-success:not(.e-float-icon-left), .e-input-group.e-warning:not(.e-float-icon-left), .e-input-group.e-error:not(.e-float-icon-left), .e-input-group.e-control-wrapper:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-success:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-warning:not(.e-float-icon-left), .e-input-group.e-control-wrapper.e-error:not(.e-float-icon-left){
+  border: none;
+} */
