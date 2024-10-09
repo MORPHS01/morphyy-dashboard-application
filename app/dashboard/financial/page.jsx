@@ -1,5 +1,5 @@
 "use client"
-import Header from "@components/header"
+import Header from "@components/Header"
 import Chart from "react-apexcharts"
 import { financialChartData } from "@data/dummyData"
 

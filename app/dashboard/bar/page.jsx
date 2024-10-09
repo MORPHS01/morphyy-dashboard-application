@@ -1,4 +1,4 @@
-import Header from "@components/header"
+import Header from "@components/Header"
 import { BarChart } from '@mui/x-charts/BarChart';
 
 function bar() {
