@@ -1,7 +1,11 @@
 "use client"
 import Header from "@components/Header"
-import Chart from "react-apexcharts"
+import dynamic from 'next/dynamic';
 import { financialChartData } from "@data/dummyData"
+
+const Chart = dynamic(()=> import('react-apexcharts'), {
+  ssr:false,
+})
 
 function financial() {
   const options = {

@@ -1,10 +1,13 @@
 "use client"
-import React, { useState } from 'react';
-import ReactQuill from 'react-quill'; 
+import React, { useState } from 'react'; 
 import 'react-quill/dist/quill.snow.css';
-
+import dynamic from 'next/dynamic';
 import Header from "@components/Header"
 import { EditorData } from '@data/dummyData';
+
+const ReactQuill = dynamic(()=> import('react-quill'), {
+  ssr:false,
+})
 
 function Editor(){
   const [editorContent, setEditorContent] = useState(EditorData);
