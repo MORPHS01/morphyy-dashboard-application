@@ -46,7 +46,12 @@ function Employees() {
             {searchArray.length > 0 ?
               searchArray.map((employeeData) => (
                 <TableRow key={employeeData.EmployeeID} sx={{ '&:last-child td, &:last-child th': { border: 0 } }} >
-                  <TableCell className='flex gap-2 items-center'><Image src={employeeData.EmployeeImage} width={30} className='rounded-full'/><p>{employeeData.Name}</p></TableCell>
+                  <TableCell className='flex gap-2 items-center'>
+                    <span>
+                      <Image src={employeeData.EmployeeImage} width={30} className='rounded-full'/>
+                    </span>
+                  <span>{employeeData.Name}</span>
+                  </TableCell>
                   <TableCell>{employeeData.Title}</TableCell>
                   <TableCell>{employeeData.Country}</TableCell>
                   <TableCell>{employeeData.HireDate}</TableCell>
