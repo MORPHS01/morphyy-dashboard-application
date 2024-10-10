@@ -50,7 +50,9 @@ function Employees() {
                     <span>
                       <Image src={employeeData.EmployeeImage} width={30} className='rounded-full'/>
                     </span>
-                  <span>{employeeData.Name}</span>
+                    <span>
+                      {employeeData.Name}
+                    </span>
                   </TableCell>
                   <TableCell>{employeeData.Title}</TableCell>
                   <TableCell>{employeeData.Country}</TableCell>
