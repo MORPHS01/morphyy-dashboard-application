@@ -12,7 +12,7 @@ import { useState } from "react";
 
 
 
-async function Customers() {
+function Customers() {
   const [rows, setRows] = useState(customersData)
   function handleDelete(id){
     const updatedRows = rows.filter((row) => row.id !== id);
