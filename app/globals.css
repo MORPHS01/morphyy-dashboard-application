@@ -45,6 +45,25 @@
     z-index: 10000;
   }
 
+  .loader {
+    width: fit-content;
+    font-size: 50px;
+    font-family: system-ui,sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #0000;
+    -webkit-text-stroke: 1px #00ffff;
+    background: conic-gradient(#00ffff 0 0) 0/0% 100% no-repeat text;
+    animation: l1 1s linear infinite;
+  }
+  .loader:before {
+    letter-spacing: 0.6rem;
+    content: "Loading...";
+  }
+  @keyframes l1 {
+    to{background-size: 120% 100%}
+  }
+
   .e-dlg-center-center, .e-quick-popup-wrapper.e-device{
     z-index: 1000000 !important;
   }
