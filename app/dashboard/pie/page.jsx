@@ -23,7 +23,7 @@ function pie() {
         <h3 className="text-2xl tracking-wide text-slate-900">Project Cost Breakdown</h3>
       </div>
 
-      <div className="flex justify-center items-center mb-7 w-[110%] ml-9 mx-auto">
+      <div className="flex justify-center items-center mb-7 w-[115%] ml-3 mx-auto">
         <PieChart
           series={[
             {
