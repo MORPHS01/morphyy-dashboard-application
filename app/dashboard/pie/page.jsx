@@ -25,7 +25,6 @@ function pie() {
 
       <div className="flex justify-center items-center mb-7 w-[100%] ml-9">
         <PieChart
-          className="flex justify-center items-center"
           series={[
             {
               data: pieChartData,
