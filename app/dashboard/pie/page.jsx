@@ -6,13 +6,13 @@ import { PieChart } from '@mui/x-charts/PieChart';
 
 function pie() {
   const pieChartData = [
-    {id: 0, color: "rgb(139,93,65)", label: 'Labour', value: 18  },
-    {id: 1, color: "rgb(200,187,248)", label: 'Legal', value: 8 },
-    {id: 2, color: "rgb(249,65,114)", label: 'Production', value: 15  },
-    {id: 3, color: "rgb(132,219,235)", label: 'License', value: 11  },
-    {id: 4, color: "rgb(194,226,156)", label: 'Facilities', value: 18  },
-    {id: 5, color: "rgb(245,209,192)", label: 'Taxes', value: 14  },
-    {id: 6, color: "rgb(255,225,172)", label: 'Insurance', value: 16  },
+    {id: 0, color: "rgb(139,93,65)", value: 18  },
+    {id: 1, color: "rgb(200,187,248)", value: 8 },
+    {id: 2, color: "rgb(249,65,114)", value: 15  },
+    {id: 3, color: "rgb(132,219,235)", value: 11  },
+    {id: 4, color: "rgb(194,226,156)", value: 18  },
+    {id: 5, color: "rgb(245,209,192)", value: 14  },
+    {id: 6, color: "rgb(255,225,172)", value: 16  },
   ];
 
   return (
@@ -35,6 +35,15 @@ function pie() {
         ]}
         height={300}
       />
+      <div className="flex flex-wrap gap-1">
+        <div><div className="mr-[2px] bg-rgb(139,93,65) h-2 w-2"></div><p>Labour</p></div>
+        <div><div className="mr-[2px] bg-rgb(200,187,248) h-2 w-2"></div><p>Legal</p></div>
+        <div><div className="mr-[2px] bg-rgb(249,65,114) h-2 w-2"></div><p>Production</p></div>
+        <div><div className="mr-[2px] bg-rgb(132,219,235) h-2 w-2"></div><p>License</p></div>
+        <div><div className="mr-[2px] bg-rgb(194,226,156) h-2 w-2"></div><p>Facilities</p></div>
+        <div><div className="mr-[2px] bg-rgb(245,209,192) h-2 w-2"></div><p>Taxes</p></div>
+        <div><div className="mr-[2px] bg-rgb(255,225,172) h-2 w-2"></div><p>Insurance</p></div>
+      </div>
     </div>
   )
 }
