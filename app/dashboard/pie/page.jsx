@@ -18,31 +18,36 @@ function pie() {
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl max-md:mt-12 max-sm:w-[90%]">
       <Header category="Chart" title="Pie" />
+
       <div className="flex justify-center items-center mb-5">
         <h3 className="text-2xl tracking-wide text-slate-900">Project Cost Breakdown</h3>
       </div>
-      <PieChart
-        series={[
-          {
-            data: pieChartData,
-            innerRadius: 60,
-            outerRadius: 140,
-            paddingAngle: 2,
-            highlightScope: { fade: 'global', highlight: 'item' },
-            faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-            arcLabel: (item) => `${item.value}%`,
-          }
-        ]}
-        height={300}
-      />
+
+      <div className="flex justify-center items-center mb-7">
+        <PieChart
+          series={[
+            {
+              data: pieChartData,
+              innerRadius: 60,
+              outerRadius: 140,
+              paddingAngle: 2,
+              highlightScope: { fade: 'global', highlight: 'item' },
+              faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
+              arcLabel: (item) => `${item.value}%`,
+            }
+          ]}
+          height={300}
+        />
+      </div>
+
       <div className="flex flex-wrap gap-4">
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color1 h-4 w-4"></div><p>Labour</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color2 h-4 w-4"></div><p>Legal</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color3 h-4 w-4"></div><p>Production</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color4 h-4 w-4"></div><p>License</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color5 h-4 w-4"></div><p>Facilities</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color6 h-4 w-4"></div><p>Taxes</p></div>
-        <div className="flex gap-x-1"><div className="mr-[2px] bg-color7 h-4 w-4"></div><p>Insurance</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color1 h-4 w-4"></div><p>Labour</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color2 h-4 w-4"></div><p>Legal</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color3 h-4 w-4"></div><p>Production</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color4 h-4 w-4"></div><p>License</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color5 h-4 w-4"></div><p>Facilities</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color6 h-4 w-4"></div><p>Taxes</p></div>
+        <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color7 h-4 w-4"></div><p>Insurance</p></div>
       </div>
     </div>
   )
