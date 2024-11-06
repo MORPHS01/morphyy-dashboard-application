@@ -40,7 +40,7 @@ function pie() {
         />
       </div>
 
-      <div className="flex flex-wrap gap-4">
+      <div className="flex flex-wrap gap-4 justify-center items-center">
         <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color1 h-4 w-4"></div><p>Labour</p></div>
         <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color2 h-4 w-4"></div><p>Legal</p></div>
         <div className="flex gap-x-1 items-center justify-center"><div className="mr-[2px] bg-color3 h-4 w-4"></div><p>Production</p></div>
