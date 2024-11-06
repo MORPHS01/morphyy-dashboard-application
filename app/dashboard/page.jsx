@@ -173,7 +173,7 @@ function dashboard(){
             <p className="text-xl font-semibold">Sales Overview</p>
             <DropDown/>
           </div>
-          <div className="md:w-full overflow-auto max-w-[90%]">
+          <div className="md:w-full overflow-auto flex-shrink-1">
             <LinearChart />
           </div>
         </div>
