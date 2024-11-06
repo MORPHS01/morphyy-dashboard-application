@@ -177,7 +177,7 @@ function dashboard(){
             <LinearChart width={500} height={300} />
           </div>
           <div className="hidden max-[780px]:block">
-            <LinearChart width={300} height={100} />
+            <LinearChart width={370} height={300} />
           </div>
         </div>
       </div>
