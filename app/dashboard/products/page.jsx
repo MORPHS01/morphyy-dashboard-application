@@ -8,7 +8,7 @@ function Products() {
  
 
   return (
-    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl max-md:mt-12">
       <Header category="App" title="Products" />
       <div className="flex flex-wrap justify-between max-md:justify-center gap-x-4 gap-y-12">
         {productsData.map((product) => (

@@ -96,7 +96,7 @@ function dashboard(){
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
 
-              <div className="mt-5">
+              <div className="mt-5 max-w-[85%]">
                 <SparkLineChart data={[2, 6, 8, 5, 10]} height={100} showHighlight showTooltip/>
               </div>
               <div className="mt-10">

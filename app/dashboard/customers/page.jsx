@@ -38,7 +38,7 @@ function Customers() {
 
 
   return (
-    <div className="w-[90%] mx-auto m-5 md:my-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
+    <div className="w-[90%] mx-auto m-5 md:my-10 mt-24 p-2 md:p-10 bg-white rounded-3xl max-md:mt-12">
       <Header category="Page" title="Customers"/>
       <Paper sx={{ height: 800 }}>
         <DataGrid
