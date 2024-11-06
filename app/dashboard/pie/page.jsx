@@ -36,13 +36,13 @@ function pie() {
         height={300}
       />
       <div className="flex flex-wrap gap-1">
-        <div><div className="mr-[2px] bg-rgb(139,93,65) h-2 w-2"></div><p>Labour</p></div>
-        <div><div className="mr-[2px] bg-rgb(200,187,248) h-2 w-2"></div><p>Legal</p></div>
-        <div><div className="mr-[2px] bg-rgb(249,65,114) h-2 w-2"></div><p>Production</p></div>
-        <div><div className="mr-[2px] bg-rgb(132,219,235) h-2 w-2"></div><p>License</p></div>
-        <div><div className="mr-[2px] bg-rgb(194,226,156) h-2 w-2"></div><p>Facilities</p></div>
-        <div><div className="mr-[2px] bg-rgb(245,209,192) h-2 w-2"></div><p>Taxes</p></div>
-        <div><div className="mr-[2px] bg-rgb(255,225,172) h-2 w-2"></div><p>Insurance</p></div>
+        <div><div className="mr-[2px] bg-color1 h-2 w-2"></div><p>Labour</p></div>
+        <div><div className="mr-[2px] bg-color2 h-2 w-2"></div><p>Legal</p></div>
+        <div><div className="mr-[2px] bg-color3 h-2 w-2"></div><p>Production</p></div>
+        <div><div className="mr-[2px] bg-color4 h-2 w-2"></div><p>License</p></div>
+        <div><div className="mr-[2px] bg-color5 h-2 w-2"></div><p>Facilities</p></div>
+        <div><div className="mr-[2px] bg-color6 h-2 w-2"></div><p>Taxes</p></div>
+        <div><div className="mr-[2px] bg-color7 h-2 w-2"></div><p>Insurance</p></div>
       </div>
     </div>
   )

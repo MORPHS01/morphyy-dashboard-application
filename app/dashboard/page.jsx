@@ -5,7 +5,6 @@ import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
-import Box from '@mui/material/Box';
 import { useState } from 'react';
 
 import {SparkLineChart} from '@mui/x-charts/SparkLineChart';
@@ -174,11 +173,12 @@ function dashboard(){
             <p className="text-xl font-semibold">Sales Overview</p>
             <DropDown/>
           </div>
-          <Box flexGrow={1}>
-            <div className="md:w-full overflow-auto">
-              <LinearChart />
-            </div>
-          </Box>
+          <div className="md:w-full overflow-auto max-[780px]:hidden">
+            <LinearChart width={500} height={300} />
+          </div>
+          <div className="hidden max-[780px]:block">
+            <LinearChart width={300} height={100} />
+          </div>
         </div>
       </div>
 
