@@ -96,14 +96,10 @@ function dashboard(){
                 <p className="text-gray-500 mt-1">Expense</p>
               </div>
 
-              <div className="mt-5 max-[780px]:hidden">
+              <div className="mt-5">
                 <SparkLineChart data={[2, 6, 8, 5, 10]} height={100} showHighlight showTooltip/>
               </div>
-
-              <div className="hidden mt-5 max-[780px]:block">
-                <SparkLineChart data={[2, 6, 8, 5, 10]} height={50} width={70} showHighlight showTooltip/>
-              </div>
-
+              
               <div className="mt-10">
                 <Button color="white" bgColor="bg-myCyan" text="Download Report" borderRadius="10px" />
               </div>
@@ -177,7 +173,7 @@ function dashboard(){
             <p className="text-xl font-semibold">Sales Overview</p>
             <DropDown/>
           </div>
-          <div className="md:w-full overflow-auto">
+          <div className="md:w-full overflow-auto max-w-[90%]">
             <LinearChart />
           </div>
         </div>
